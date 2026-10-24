@@ -6,7 +6,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
 <style>
-/* Layout: dark night-sky page in the brand gradient. Split hero (promise left, glowing Robbie right), then stacked sections. Single dark theme by design. */
+/* Layout: dark night-sky page in the brand gradient. Split hero (promise left, glowing Gilly right), then stacked sections. Single dark theme by design. */
 :root{
   color-scheme:dark;
   --bg:#05061A;
@@ -233,7 +233,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
         <p class="fine">30-day free trial · Fully set up for you · No technical work</p>
       </div>
       <div class="stage" aria-hidden="true">
-        <div class="float f1"><b><span class="tick"><svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 5.2l2 2L8 3" stroke="#fff" stroke-width="1.8" fill="none"/></svg></span>Lead captured</b><div class="dim">Customer: "I'd like a quote."</div><div>Robbie: "Happy to help. What's your name and number?"</div></div>
+        <div class="float f1"><b><span class="tick"><svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 5.2l2 2L8 3" stroke="#fff" stroke-width="1.8" fill="none"/></svg></span>Lead captured</b><div class="dim">Customer: "I'd like a quote."</div><div>Gilly: "Happy to help. What's your name and number?"</div></div>
         <div class="float f3"><b>06:45 enquiry</b><div class="dim">Answered in seconds, before you'd even woken up.</div></div>
         <div class="float f2"><b>Your answers</b><div class="dim">Prices, hours and areas, checked with you before launch.</div></div>
         <svg class="bot" viewBox="0 0 100 100"><use href="#mark"/></svg>
@@ -278,8 +278,8 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     <div class="wrap demo">
       <div class="demo-copy">
         <span class="pill">See it in action</span>
-        <h2>Meet <span class="g">Robbie.</span></h2>
-        <p style="color:var(--muted)">Robbie is Glikify's own assistant. Ask him a question to see how your customers would be looked after. Your assistant carries your business name and your answers.</p>
+        <h2>Meet <span class="g">Gilly.</span></h2>
+        <p style="color:var(--muted)">Gilly is Glikify's own assistant, named after the Scottish <i>gillie</i>: a guide who looks after visitors. Ask Gilly a question to see how your customers would be looked after. Your assistant carries your business name and your answers.</p>
         <ul>
           <li><span class="dot"><svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 5.2l2 2L8 3" stroke="#fff" stroke-width="1.8" fill="none"/></svg></span><span><b>Your name on it.</b> "Smith Plumbing Assistant", not a generic bot.</span></li>
           <li><span class="dot"><svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 5.2l2 2L8 3" stroke="#fff" stroke-width="1.8" fill="none"/></svg></span><span><b>Emergencies handled.</b> Urgent jobs get your phone number straight away.</span></li>
@@ -287,14 +287,14 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
         </ul>
         <div class="ctas"><a class="btn btn-primary" href="https://replify-backend.onrender.com/demo" target="_blank" rel="noopener">Try the full live demo <span aria-hidden="true">→</span></a></div>
       </div>
-      <div class="chat" aria-label="Chat with Robbie">
+      <div class="chat" aria-label="Chat with Gilly">
         <div class="chat-head">
           <svg width="38" height="38" style="background:#fff;border-radius:10px;padding:3px"><use href="#mark"/></svg>
-          <div><b>Robbie</b><small>Glikify assistant · replies instantly</small></div>
+          <div><b>Gilly</b><small>Glikify assistant · replies instantly</small></div>
         </div>
         <div class="log" id="log" aria-live="polite">
           <span class="stamp">Today 06:45</span>
-          <div class="msg bot">Morning! I'm Robbie. I answer questions for Glikify, the same way your own assistant would for your customers. Tap a question below.</div>
+          <div class="msg bot">Morning! I'm Gilly. I answer questions for Glikify, the same way your own assistant would for your customers. Tap a question below.</div>
           <div class="msg you">What does Glikify actually do?</div>
           <div class="msg bot">I go on your website and answer the questions customers ask you every day: prices, hours, areas you cover. When someone wants to book, I take their name and number and pass them to you.</div>
         </div>
@@ -410,7 +410,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     var a=answers[b.dataset.q];b.disabled=true;
     add('you',a[0]);
     if(reduce){add('bot',a[1]);return}
-    var t=add('bot','<span class="typing" aria-label="Robbie is typing"><i></i><i></i><i></i></span>');
+    var t=add('bot','<span class="typing" aria-label="Gilly is typing"><i></i><i></i><i></i></span>');
     setTimeout(function(){t.textContent=a[1];log.scrollTop=log.scrollHeight},900);
   });
   var btn=document.getElementById('copy'),msg=document.getElementById('copied'),addr=document.getElementById('addr');
