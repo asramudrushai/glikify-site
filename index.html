@@ -159,6 +159,10 @@ section.sec{padding-block:72px;position:relative}
 @media (max-width:900px){.inds{grid-template-columns:repeat(4,1fr)}}
 @media (max-width:420px){.inds{grid-template-columns:repeat(2,1fr)}}
 
+.auto{display:grid;grid-template-columns:auto 1fr auto;gap:24px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px 32px}
+.auto p{color:var(--muted)}
+.auto .icon{width:56px;height:56px}
+@media (max-width:760px){.auto{grid-template-columns:1fr}}
 /* steps */
 .steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:s}
 .steps li{counter-increment:s;display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px;position:relative;min-width:0}
@@ -356,6 +360,14 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     </div>
   </section>
 
+  <div class="wrap">
+    <div class="auto">
+      <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/><circle cx="12" cy="12" r="3.5"/></svg></div>
+      <div><h3>Looking to automate more of your business?</h3><p style="margin-top:6px">Glikify also helps with the everyday jobs that eat up your time. Tell Sara what you'd like to hand over, and she'll let you know what's possible.</p></div>
+      <a class="btn btn-ghost" href="#contact">Ask Sara</a>
+    </div>
+  </div>
+
   <section class="sec" id="how">
     <div class="wrap">
       <div class="sec-head"><span class="kicker">How it works</span><h2>Live in four simple steps</h2></div>
@@ -375,8 +387,8 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
         <div class="plan">
           <span class="tag">30-day free trial</span>
           <div class="amounts">
-            <div><b>£495</b><span>one-off setup</span></div>
-            <div><b>£200</b><span>per month</span></div>
+            <div><b>£199</b><span>one-off setup</span></div>
+            <div><b>£49</b><span>per month</span></div>
           </div>
           <ul class="checks">
             <li><svg><use href="#chk"/></svg>Your own AI assistant, named and branded for your business</li>
@@ -389,8 +401,8 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
         <div class="found">
           <span class="pill">Founding offer</span>
           <h3>Be one of our first three businesses</h3>
-          <div class="big"><span class="g">Half-price</span> setup</div>
-          <p>Pay £247.50 instead of £495. In return, we ask for an honest review once your assistant has been running for a while.</p>
+          <div class="big"><span class="g">£49 a month,</span> locked in</div>
+          <p>Our first three businesses keep the £49 monthly price for as long as they stay, even when prices go up. In return, we ask for an honest review once your assistant has been running for a while.</p>
         </div>
       </div>
     </div>
